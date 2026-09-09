@@ -2,6 +2,8 @@
 
 [English](README.md) | [简体中文](README.zh-CN.md)
 
+[Download for macOS](https://github.com/yf-official/MemPulse/releases/latest) · [All releases](https://github.com/yf-official/MemPulse/releases)
+
 **Monitor. Detect. Release.**
 
 MemPulse is a lightweight, native memory monitor for macOS. It combines a compact menu bar readout with a full application window, focusing on the signals that matter: Memory Pressure, compressed memory, swap activity, top memory-consuming processes, and sustained process growth.
@@ -42,13 +44,13 @@ The screenshots use illustrative process names and memory values. They do not co
 
 ## Install and Run
 
-A prebuilt universal application is included at:
+1. Open the [latest release](https://github.com/yf-official/MemPulse/releases/latest) and download **MemPulse-1.0.0-universal.zip** from Assets.
+2. Extract the ZIP and move **MemPulse.app** to **Applications**.
+3. Open MemPulse. The same download supports Apple Silicon and Intel Macs.
 
-```text
-dist/MemPulse.app
-```
+[Download version 1.0.0 directly](https://github.com/yf-official/MemPulse/releases/download/v1.0.0/MemPulse-1.0.0-universal.zip)
 
-Copy it to `/Applications` and open it. The repository build is ad-hoc signed; a broadly distributed download still requires Developer ID signing and Apple notarization for a seamless Gatekeeper experience.
+The current release is ad-hoc signed and has not been notarized by Apple. macOS may block the downloaded application. You can also build it from the Xcode project below. A copy of the application is included in `dist/MemPulse.app` for repository users.
 
 ## Build
 

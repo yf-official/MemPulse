@@ -2,6 +2,8 @@
 
 [English](README.md) | [简体中文](README.zh-CN.md)
 
+[下载 macOS 版](https://github.com/yf-official/MemPulse/releases/latest) · [全部版本](https://github.com/yf-official/MemPulse/releases)
+
 **Monitor. Detect. Release.**
 
 MemPulse 是一款轻量、原生的 macOS 内存监控应用。它同时提供紧凑的菜单栏状态项和完整应用窗口，重点展示真正有诊断价值的 Memory Pressure、压缩内存、交换空间、高内存进程与进程持续增长。
@@ -42,13 +44,13 @@ MemPulse 不把正常文件缓存包装成“垃圾内存”，不通过制造�
 
 ## 安装与运行
 
-仓库内的通用架构应用位于：
+1. 打开[最新发布页面](https://github.com/yf-official/MemPulse/releases/latest)，从 Assets 下载 **MemPulse-1.0.0-universal.zip**。
+2. 解压 ZIP，将 **MemPulse.app** 移到“应用程序”目录。
+3. 打开 MemPulse。同一个安装包兼容 Apple Silicon 和 Intel Mac。
 
-```text
-dist/MemPulse.app
-```
+[直接下载 1.0.0 版](https://github.com/yf-official/MemPulse/releases/download/v1.0.0/MemPulse-1.0.0-universal.zip)
 
-将它复制到 `/Applications` 后运行。仓库内构建使用 ad-hoc 签名；面向普通用户广泛分发前仍需 Developer ID 签名和 Apple 公证，才能获得顺畅的 Gatekeeper 体验。
+当前版本使用 ad-hoc 签名，尚未通过 Apple 公证，macOS 可能阻止直接打开下载的应用。也可以按照下方说明使用 Xcode 自行构建。克隆仓库的用户还可以在 `dist/MemPulse.app` 找到应用副本。
 
 ## 构建
 
